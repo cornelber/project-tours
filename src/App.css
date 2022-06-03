@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+/* App Styles */
+
+.btn-refresh {
+	cursor: pointer;
+	padding: 10px 50px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #20b2aa;
+	border: solid 2px #20b2aa;
+	background-color: transparent;
+	border-radius: 2px;
+	transition: all 0.3s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-refresh:hover {
+	background-color: #20b2aa;
+	color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Loading Styles */
+.loading-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loading-title {
+	font-size: 50px;
+	color: #20b2aa;
+}
+/* Tours Styles */
+.tours-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.tours-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tours-title h2 {
+	font-size: 50px;
+	color: #20b2aa;
+}
+
+.tours-title__line {
+	width: 100px;
+	height: 10px;
+	background-color: #20b2aa;
+	margin-bottom: 41.5px;
+}
+
+.tours-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Tour Styles */
+article {
+	max-width: 600px;
+	margin-bottom: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: transparent;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tour-footer {
+	padding: 20px;
+	text-align: center;
+}
+
+.tour-img img {
+	width: 100%;
+	max-width: 600px;
+	height: 400px;
+	object-fit: cover;
+}
+.tour-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tour-title h2 {
+	font-size: 18px;
+	color: #20b2aa;
+}
+
+.tour-title .tour-price {
+	padding: 5px 10px;
+	background-color: #20b2aa;
+	opacity: 0.5;
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+}
+
+article:hover .tour-footer .tour-price {
+	opacity: 1;
+}
+
+.tour-title .tour-price p {
+	color: white;
+	font-weight: 600;
+	margin: 0;
+}
+
+.tour-subtitle {
+	margin-bottom: 50px;
+}
+
+.tour-subtitle p {
+	text-align: left;
+}
+
+.tour-subtitle__btn {
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	color: #20b2aa;
+	background: transparent;
+	border-color: transparent;
+	opacity: 0.5;
+	transition: all 0.3s ease-in-out;
+}
+
+.tour-subtitle__btn:hover {
+	opacity: 1;
+}
+
+.tour-btn {
+	cursor: pointer;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: 600;
+	color: white;
+	background-color: #20b2aa;
+	border: none;
+	border-radius: 3px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	opacity: 0.5;
+	transition: all 0.3s ease-in-out;
+}
+
+.tour-btn:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 482px) {
+	.tour-title {
+		flex-direction: column;
+	}
 }
